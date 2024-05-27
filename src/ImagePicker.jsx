@@ -1,4 +1,4 @@
-// src/ImagePicker.jsx
+// ImagePicker.jsx
 import React, { useCallback, useEffect, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { initializeWebSocket } from './WebSocketHandler';
@@ -66,7 +66,8 @@ function ImagePicker() {
   };
 
   return (
-    <div>
+    <div className="image-picker">
+      <div className="select-text">Select All Image</div>
       <div {...getRootProps()} className="dropzone">
         <input {...getInputProps()} />
         <p>Drag & drop images here, or click to select files</p>

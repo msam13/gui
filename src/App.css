@@ -4,6 +4,16 @@ body, html, #root, .App {
   padding: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+}
+/* ImagePicker.css */
+.image-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center vertically */
+  height: 100%; /* Set height to fill the entire height of the parent container */
 }
 
 .App {
@@ -11,14 +21,26 @@ body, html, #root, .App {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding-top: 60px; /* Add padding to prevent content from being hidden under the navbar */
 }
 
-h1 {
-  color: #ffffff; /* Adjust text color to ensure visibility against background */
+.container {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 60px); /* Subtract navbar height from total height */
 }
+
+.left,
+.right {
+  width: 50%; /* Each container takes up 50% of the available width */
+}
+
+.left {
+  padding-right: 10px; /* Add some space between the left and right containers */
+}
+
+.right {
+  padding-left: 10px; /* Add some space between the left and right containers */
+}
+
+/* Adjust styles for ImagePicker and ModelViewer if necessary */

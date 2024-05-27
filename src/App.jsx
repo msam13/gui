@@ -1,15 +1,22 @@
-// src/App.jsx
+// App.jsx
 import React from 'react';
 import './App.css';
 import NavBar from './NavBar';
 import ImagePicker from './ImagePicker';
+import ModelViewer from './ModelViewer';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <h1>Image Uploader</h1>
-      <ImagePicker />
+      <div className="container">
+        <div className="left">
+          <ImagePicker />
+        </div>
+        <div className="right">
+          <ModelViewer />
+        </div>
+      </div>
     </div>
   );
 }

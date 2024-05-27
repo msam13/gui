@@ -1,40 +1,59 @@
-/* src/ImagePicker.css */
+/* ImagePicker.css */
+.image-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-text {
+  margin-bottom: 10px; /* Add margin below the text */
+  font-family: "Times New Roman", Times, serif; /* Set font family */
+  font-size: 30px; /* Set font size */
+  font-style: italic; /* Set font style */
+  font-weight: bold; /* Make text bold */
+  color: #333333; /* Adjust text color */
+}
 .dropzone {
-    border: 2px dashed #eeeeee;
-    border-radius: 4px;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  .preview-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .preview {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-  }
-  
+  border: 2px dashed #eeeeee;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%; /* Adjust width as needed */
+}
+
+.dropzone p {
+  margin: 0; /* Remove default margin */
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 80%; /* Adjust width as needed */
+}
+
+.preview {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  width: 80%; /* Adjust width as needed */
+}
